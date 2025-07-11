@@ -11,19 +11,6 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
-
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
 };
 
 / {
@@ -70,7 +57,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
@@ -86,7 +72,6 @@
 &mt LCTRL Z       &kp X                   &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &mkp LCLK  &mkp RCLK        &lt 5 SLASH
 &kp LEFT_SHIFT    &lt_to_layer_0 5 LGUI   &kp LEFT_ALT  &mt LCTRL DEL                &kp SPACE    &lt_to_layer_0 3 ENTER             &kp BACKSPACE  &lt 1 ENTER                                     &kp DEL
             >;
-
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
@@ -101,10 +86,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp 1  &kp 2  &kp 3  &kp 4  &kp 5              &kp 1  &kp 2  &kp 3  &kp 4  &kp 5
+&kp 6  &kp 7  &kp 8  &kp 9  &kp 0  &kp SEMICOLON  &kp MINUS  &kp 6  &kp 7  &kp 8  &kp 9  &kp 0
+&kp ESCAPE  &kp COMMA  &kp PERIOD  &kp MINUS  &kp EQUAL  &kp SLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH
+&kp LEFT_SHIFT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TAB
             >;
         };
 
@@ -115,7 +100,6 @@
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
-
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
