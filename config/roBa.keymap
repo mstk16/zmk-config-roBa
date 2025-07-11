@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                   &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O            &kp P
-&kp A             &kp S                   &kp D         &kp F                        &kp G        &kp TAB                            &kp MINUS      &kp H        &kp J  &kp K      &mt LCTRL MINUS  &kp L
-&mt LCTRL Z       &kp X                   &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &mkp LCLK  &mkp RCLK        &lt 5 SLASH
-&kp LEFT_SHIFT    &lt_to_layer_0 5 LGUI   &kp LEFT_ALT  &mt LCTRL DEL                &kp SPACE    &lt_to_layer_0 3 ENTER             &kp BACKSPACE  &lt 1 ENTER                                     &kp DEL
+&kp Q             &kp W                   &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O          &kp P
+&kp A             &kp S                   &kp D         &kp F                        &kp G        &kp TAB                            &kp MINUS      &kp H        &kp J  &kp K      &kp MINUS      &mt LCTRL L
+&mt LCTRL Z       &kp X                   &kp C         &kp V                        &kp B        &kp LCTRL                          &kp SEMICOLON  &kp N        &kp M  &mkp LCLK  &mkp RCLK      &mt RRhift LT(SLASH)
+&kp LEFT_SHIFT    &lt_to_layer_0 5 LGUI   &kp LEFT_ALT  &mt LCTRL DEL                &kp SPACE    &lt_to_layer_0 2 ENTER             &kp BACKSPACE  &lt 1 ENTER                                   &lt_to_layer_0 5 
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
@@ -86,10 +86,10 @@
 
         NUM {
             bindings = <
-&kp 1  &kp 2  &kp 3  &kp 4  &kp 5              &kp 1  &kp 2  &kp 3  &kp 4  &kp 5
-&kp 6  &kp 7  &kp 8  &kp 9  &kp 0  &kp SEMICOLON  &kp MINUS  &kp 6  &kp 7  &kp 8  &kp 9  &kp 0
-&kp ESCAPE  &kp COMMA  &kp PERIOD  &kp MINUS  &kp EQUAL  &kp SLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH
-&kp LEFT_SHIFT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TAB
+&kp 1           &kp 2           &kp 3             &kp 4       &kp 5                                                 &kp 1            &kp 2  &kp 3  &kp 4  &kp 5
+&kp 6           &kp 7           &kp 8             &kp 9       &kp 0      &kp LS(SEMICOLON)          &kp MINUS       &kp 6            &kp 7  &kp 8  &kp 9  &kp 0
+&kp ESCAPE      &kp COMMA       &kp PERIOD        &kp MINUS   &kp EQUAL  &kp SLASH                  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH
+&kp LEFT_SHIFT  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp TAB     &tl 2      &trans                     &trans          &kp TAB                                                                     &trans
             >;
         };
 
