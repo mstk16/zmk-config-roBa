@@ -86,10 +86,10 @@
 
         NUM {
             bindings = <
-&kp 1  &kp 2  &kp 3  &kp 4  &kp 5              &kp 1  &kp 2  &kp 3  &kp 4  &kp 5
-&kp 6  &kp 7  &kp 8  &kp 9  &kp 0  &kp SEMICOLON  &kp MINUS  &kp 6  &kp 7  &kp 8  &kp 9  &kp 0
-&kp ESCAPE  &kp COMMA  &kp PERIOD  &kp MINUS  &kp EQUAL  &kp SLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp BACKSLASH
-&kp LEFT_SHIFT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TAB
+&kp 1           &kp 2           &kp 3            &kp 4      &kp 5                                                &kp 1            &kp 2                 &kp 3                  &kp 4          &kp 5
+&kp 6           &kp 7           &kp 8            &kp 9      &kp 0      &kp SEMICOLON             &kp MINUS       &kp 6            &kp 7                 &kp 8                  &kp 9          &kp 0
+&kp ESCAPE      &kp COMMA       &kp PERIOD       &kp MINUS  &kp EQUAL  &kp SLASH                 &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp BACKSLASH
+&kp LEFT_SHIFT  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp TAB    &trans     &trans                    &trans          &trans                                                                       &trans
             >;
         };
 
