@@ -72,20 +72,20 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                   &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O            &kp P
-&kp A             &kp S                   &kp D         &kp F                        &kp G        &kp TAB                            &kp MINUS      &kp H        &kp J  &kp K      &mt LCTRL MINUS  &kp L
-&mt LCTRL Z       &kp X                   &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &mkp LCLK  &mkp RCLK        &lt 5 SLASH
-&kp LEFT_SHIFT    &lt_to_layer_0 5 LGUI   &kp LEFT_ALT  &mt LCTRL DEL                &kp SPACE    &lt_to_layer_0 3 ENTER             &kp BACKSPACE  &lt 1 ENTER                                     &kp DEL
+&kp Q             &kp W                   &kp E         &kp R            &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O            &kp P
+&kp A             &kp S                   &kp D         &kp F            &kp G        &kp TAB                            &kp MINUS      &kp H        &kp J  &kp K      &mt LCTRL MINUS  &kp L
+&mt LCTRL Z       &kp X                   &kp C         &kp V            &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &mkp LCLK  &mkp RCLK        &lt 5 SLASH
+&kp LEFT_SHIFT    &lt_to_layer_0 5 LGUI   &kp LEFT_ALT  &mt LCTRL DEL    &kp SPACE    &lt_to_layer_0 3 ENTER             &kp BACKSPACE  &lt 1 ENTER                                     &kp DEL
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5               &kp F6  &kp F7  &kp COMMA     &kp DOT       &kp L
-&kp LS(1)   &kp LS(2)   &kp LS(3)   &kp LS(4)   &kp LS(5)     &kp F13   &kp F8  &kp F9       &kp F10      &kp UP_ARROW   &kp SLASH &kp RALT
-&kp LS(6)   &kp LS(7)   &kp LS(8)   &kp LS(9)   &kp LS(0)     &kp LANG2 &kp LANG1     &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp END  &kp F12
-&trans &trans &trans &trans &trans     &trans     &trans        &trans                                      &trans
+&kp F1      &kp F2      &kp F3      &kp F4      &kp F5                                              &kp F6           &kp F7           &kp COMMA         &kp DOT      &kp L
+&kp LS(1)   &kp LS(2)   &kp LS(3)   &kp LS(4)   &kp LS(5)    &kp F13                   &kp F8       &kp F9           &kp F10          &kp UP_ARROW      &kp SLASH    &kp RALT
+&kp LS(6)   &kp LS(7)   &kp LS(8)   &kp LS(9)   &kp LS(0)    &kp LANG2                 &kp LANG1    &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW   &kp END      &kp F12
+&trans      &trans      &trans      &trans      &trans       &trans                    &trans       &trans                                                           &trans
             >;
         };
 
