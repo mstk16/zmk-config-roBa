@@ -46,8 +46,8 @@
         key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
     };
 
-    ime_on {
-        bindings = <&kp GRAVE>; // IMEオン（例：半角/全角キー）
+    LANG1 {
+        bindings = <&kp LANG1>; // IMEオン（例：半角/全角キー）
         key-positions = <20 13>; // ← 必ず実機レイアウトに合わせて番号を修正する
         timeout-ms = <30>;       // 必要に応じて調整
     };
