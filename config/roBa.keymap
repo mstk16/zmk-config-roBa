@@ -48,7 +48,7 @@
 
         combo_kd_hiragana { // コンボの名前は慣習的に "combo_" で始めます [2]
             bindings = <&kp LANGUAGE_4>; // ひらがな入力に切り替えるキーコード [1]
-            key-positions = <8 23>; // 同時押しを検知するキーの位置 [2]
+            key-positions = <12 17>; // 同時押しを検知するキーの位置 [2]
            
     };
 };
