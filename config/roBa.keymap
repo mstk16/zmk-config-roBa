@@ -46,10 +46,13 @@
         key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
     };
 
-    LANG1 {
-        bindings = <&kp LANG1>; // IMEオン（例：半角/全角キー）
-        key-positions = <20 13>; // ← 必ず実機レイアウトに合わせて番号を修正する
-        timeout-ms = <30>;       // 必要に応じて調整
+    combos {
+        compatible = "zmk,combos"; // コンボ設定に必須のプロパティ [2]
+
+        combo_kd_hiragana { // コンボの名前は慣習的に "combo_" で始めます [2]
+            timeout-ms = <50>; // すべてのキーが押されるまでのタイムアウト時間（ミリ秒） [2]
+            key-positions = <X Y>; // 同時押しを検知するキーの位置 [2]
+            bindings = <&kp LANGUAGE_4>; // ひらがな入力に切り替えるキーコード [1]
     };
 };
 
