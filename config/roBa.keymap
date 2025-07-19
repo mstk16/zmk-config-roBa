@@ -13,40 +13,46 @@
     scroll-layers = <5>;
 };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
+/ {combos {
+    compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-
-        scroll_combo {
-            bindings = <&mo 5>;
-            key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
-        };
+    tab {
+        bindings = <&kp TAB>;
+        key-positions = <11 12>;
     };
+
+    shift_tab {
+        bindings = <&kp LS(TAB)>;
+        key-positions = <12 13>;
+    };
+
+    muhennkann {
+        bindings = <&to_layer_0 INT_MUHENKAN>;
+        key-positions = <11 10>;
+    };
+
+    double_quotation {
+        bindings = <&kp DOUBLE_QUOTES>;
+        key-positions = <20 21>;
+    };
+
+    eq {
+        bindings = <&kp EQUAL>;
+        key-positions = <24 25>;
+    };
+
+    scroll_combo {
+        bindings = <&mo 5>;
+        key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
+    };
+
+    ime_on {
+        bindings = <&kp GRAVE>; // IMEオン（例：半角/全角キー）
+        key-positions = <20 13>; // ← 必ず実機レイアウトに合わせて番号を修正する
+        timeout-ms = <30>;       // 必要に応じて調整
+    };
+};
+
 
     macros {
         to_layer_0: to_layer_0 {
