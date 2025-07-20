@@ -13,44 +13,46 @@
     scroll-layers = <5>;
 };
 
-/ {combos {
-    compatible = "zmk,combos";
+/ {
+    combos {
+        compatible = "zmk,combos";
 
-    tab {
-        bindings = <&kp TAB>;
-        key-positions = <11 12>;
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+        };
+
+        shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 13>;
+        };
+
+        muhennkann {
+            bindings = <&kp INT_MUHENKAN>; // 修正点1: &to_layer_0 を &kp に変更
+            key-positions = <11 10>;
+        };
+
+        question_mark_combo {
+            bindings = <&kp QUESTION>; // 修正点2: &kp LS(SLASH) を &kp QUESTION に変更
+            key-positions = <20 21>;
+        };
+
+        eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <24 25>;
+        };
+
+        scroll_combo {
+            bindings = <&mo 5>;
+            key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
+        };
+
+        enter_combo { // コンボの名前を機能に合わせて変更 (例: enter_combo)
+            bindings = <&kp RETURN>; // DOUBLE_QUOTES を RETURN に変更
+            key-positions = <12 19>; // キー位置はそのまま （コメントから誤解を招く記述を削除）
+        };
     };
 
-    shift_tab {
-        bindings = <&kp LS(TAB)>;
-        key-positions = <12 13>;
-    };
-
-    muhennkann {
-        bindings = <&to_layer_0 INT_MUHENKAN>;
-        key-positions = <11 10>;
-    };
-
-    question_mark_combo {
-        bindings = <&kp LS(SLASH)>; // これで疑問符が出力されます
-        key-positions = <20 21>;
-    };
-
-    eq {
-        bindings = <&kp EQUAL>;
-        key-positions = <24 25>;
-    };
-
-    scroll_combo {
-        bindings = <&mo 5>;
-        key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
-    };
-
-    enter_combo { // コンボの名前を機能に合わせて変更 (例: enter_combo)
-        bindings = <&kp RETURN>; // DOUBLE_QUOTES を RETURN に変更
-        key-positions = <12 19>; // キー位置はそのまま           
-    };
-};
 
 
     macros {
