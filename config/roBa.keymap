@@ -13,54 +13,56 @@
     scroll-layers = <5>;
 };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
+/ {combos {
+    compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
+    tab {
+        bindings = <&kp TAB>;
+        key-positions = <11 12>;
+    };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
+    shift_tab {
+        bindings = <&kp LS(TAB)>;
+        key-positions = <12 13>;
+    };
 
-        muhennkann {
-            bindings = <&kp INT_MUHENKAN>; // 修正済み: &to_layer_0 → &kp
-            key-positions = <11 10>;
-        };
+    muhennkann {
+        bindings = <&to_layer_0 INT_MUHENKAN>;
+        key-positions = <11 10>;
+    };
 
-        question_mark_combo {
-            bindings = <&kp QUESTION>; // 修正済み: &kp LS(SLASH) → &kp QUESTION
-            key-positions = <20 21>;
-        };
+    question_mark {
+        bindings = <&kp QUESTION>;
+        key-positions = <20 21>;
+    };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
+    SPACE {
+        bindings = <&kp SPACE>;
+        key-positions = <13 18>;
+    };
 
-        scroll_combo {
-            bindings = <&mo 5>; // 一時的にレイヤー5に切り替え
-            key-positions = <31 32>; // 修正済み: LCLK=31, RCLK=32
-        };
 
-        enter_combo {
-            bindings = <&kp RETURN>; // 修正済み: DOUBLE_QUOTES → RETURN
-            key-positions = <12 19>;
-        };
+    eq {
+        bindings = <&kp EQUAL>;
+        key-positions = <24 25>;
+    };
+
+    scroll_combo {
+        bindings = <&mo 5>;
+        key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
+    };
+
+    enter_combo { // コンボの名前を機能に合わせて変更 (例: enter_combo)
+        bindings = <&kp RETURN>; // DOUBLE_QUOTES を RETURN に変更
+        key-positions = <12 19>; // キー位置はそのまま           
     };
 };
-
-
 
 
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;ｑ
+            #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
