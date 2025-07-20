@@ -13,7 +13,7 @@
     scroll-layers = <5>;
 };
 
-/ {combos {
+&combos {
     compatible = "zmk,combos";
 
     tab {
@@ -27,12 +27,12 @@
     };
 
     muhennkann {
-        bindings = <&to_layer_0 INT_MUHENKAN>;
+        bindings = <&kp INT_MUHENKAN>;
         key-positions = <11 10>;
     };
 
     question_mark {
-        bindings = <&kp QUESTION>;
+        bindings = <&kp LS(SLASH)>;
         key-positions = <20 21>;
     };
 
@@ -41,7 +41,6 @@
         key-positions = <13 18>;
     };
 
-
     eq {
         bindings = <&kp EQUAL>;
         key-positions = <24 25>;
@@ -49,34 +48,27 @@
 
     scroll_combo {
         bindings = <&mo 5>;
-        key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
+        key-positions = <31 32>;
     };
 
-    enter_combo { // コンボの名前を機能に合わせて変更 (例: enter_combo)
-        bindings = <&kp RETURN>; // DOUBLE_QUOTES を RETURN に変更
-        key-positions = <12 19>; // キー位置はそのまま           
+    enter_combo {
+        bindings = <&kp RETURN>;
+        key-positions = <12 19>;
     };
 };
 
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-    };
-
+ / {
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-            #binding-cells = <2>;
+            bindings = <&mo 1>, <&kp INT_MUHENKAN>;  // ここも構文的にはセーフ（複合動作）
             tapping-term-ms = <200>;
+            #binding-cells = <0>;
         };
     };
+};
+
 
     keymap {
         compatible = "zmk,keymap";
