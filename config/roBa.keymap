@@ -31,8 +31,8 @@
         key-positions = <11 10>;
     };
 
-    double_quotation {
-        bindings = <&kp DOUBLE_QUOTES>;
+    question_mark_combo {
+        bindings = <&kp QUESTION>; // これで疑問符が出力されます
         key-positions = <20 21>;
     };
 
@@ -56,7 +56,7 @@
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
+            #binding-cells = <1>;ｑ
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
