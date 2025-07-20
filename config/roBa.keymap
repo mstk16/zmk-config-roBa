@@ -28,12 +28,12 @@
         };
 
         muhennkann {
-            bindings = <&kp INT_MUHENKAN>; // 修正点1: &to_layer_0 を &kp に変更
+            bindings = <&kp INT_MUHENKAN>; // 修正済み: &to_layer_0 → &kp
             key-positions = <11 10>;
         };
 
         question_mark_combo {
-            bindings = <&kp QUESTION>; // 修正点2: &kp LS(SLASH) を &kp QUESTION に変更
+            bindings = <&kp QUESTION>; // 修正済み: &kp LS(SLASH) → &kp QUESTION
             key-positions = <20 21>;
         };
 
@@ -43,15 +43,17 @@
         };
 
         scroll_combo {
-            bindings = <&mo 5>;
-            key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
+            bindings = <&mo 5>; // 一時的にレイヤー5に切り替え
+            key-positions = <31 32>; // 修正済み: LCLK=31, RCLK=32
         };
 
-        enter_combo { // コンボの名前を機能に合わせて変更 (例: enter_combo)
-            bindings = <&kp RETURN>; // DOUBLE_QUOTES を RETURN に変更
-            key-positions = <12 19>; // キー位置はそのまま （コメントから誤解を招く記述を削除）
+        enter_combo {
+            bindings = <&kp RETURN>; // 修正済み: DOUBLE_QUOTES → RETURN
+            key-positions = <12 19>;
         };
     };
+};
+
 
 
 
