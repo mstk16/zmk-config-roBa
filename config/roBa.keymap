@@ -32,7 +32,7 @@
     };
 
     question_mark_combo {
-        bindings = <&kp SL(SLASH)>; // これで疑問符が出力されます
+        bindings = <&kp LS(SLASH)>; // これで疑問符が出力されます
         key-positions = <20 21>;
     };
 
