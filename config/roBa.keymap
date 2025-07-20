@@ -46,10 +46,9 @@
         key-positions = <31 32>; // LCLK=31, RCLK=32 に修正済み
     };
 
-        combo_kd_hiragana { // コンボの名前は慣習的に "combo_" で始めます [2]
-            bindings = <&kp LANG_HIRAGANA>; // ひらがな入力に切り替えるキーコード [1]
-            key-positions = <12 17>; // 同時押しを検知するキーの位置 [2]
-           
+    enter_combo { // コンボの名前を機能に合わせて変更 (例: enter_combo)
+        bindings = <&kp RETURN>; // DOUBLE_QUOTES を RETURN に変更
+        key-positions = <12 17>; // キー位置はそのまま           
     };
 };
 
