@@ -51,10 +51,10 @@
         key-positions = <12 19>; // キー位置はそのまま           
     };
 
-　　browser_back_combo { // コンボ名を変更
-   　　 bindings = <&kp C_AC_BACK>; // ブラウザの「戻る」に設定
-  　　  key-positions = <18 19>;
-　　};
+    browser_back_combo { // コンボ名を変更
+        bindings = <&kp C_AC_BACK>; // ブラウザの「戻る」に設定
+        key-positions = <18 19>;
+    };
 };
 
 
