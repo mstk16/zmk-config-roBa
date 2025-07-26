@@ -1,55 +1,16 @@
 #include "roBa.dtsi"
 
 &kscan0 {
-    col-gpios = <&xiao_d 10 GPIO_ACTIVE_HIGH>,
-                <&xiao_d 9 GPIO_ACTIVE_HIGH>,
-                <&xiao_d 8 GPIO_ACTIVE_HIGH>,
-                <&xiao_d 7 GPIO_ACTIVE_HIGH>,
-                <&gpio0 10 GPIO_ACTIVE_HIGH>,
-                <&gpio0 9 GPIO_ACTIVE_HIGH>;
+        col-gpios
+            = <&xiao_d 10 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
+            , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
+            , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>
+            , <&gpio0 9 GPIO_ACTIVE_HIGH>
+            ;
 };
 
 &left_encoder {
     status = "okay";
-};
-
-&combos {
-    compatible = "zmk,combos";
-
-    tab {
-        bindings = <&kp TAB>;
-        key-positions = <11 12>;
-    };
-
-    shift_tab {
-        bindings = <&kp LS(TAB)>;
-        key-positions = <12 13>;
-    };
-
-    muhennkann {
-        bindings = <&kp INT_MUHENKAN>;
-        key-positions = <11 10>;
-    };
-
-    double_quotation {
-        bindings = <&kp DOUBLE_QUOTES>;
-        key-positions = <20 21>;
-    };
-
-    eq {
-        bindings = <&kp EQUAL>;
-        key-positions = <24 25>;
-    };
-
-    scroll_combo {
-        bindings = <&mo 5>;
-        key-positions = <31 32>;
-    };
-
-    enter_combo {
-        bindings = <&kp RETURN>;
-        key-positions = <12 19>;
-    };
-
-    // 必要に応じて他のcomboもここに追加できます
 };
