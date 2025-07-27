@@ -63,12 +63,12 @@
         };
 
         undo_motonimodosu {
-            bindings = <&kp K_UNDO>;
+            bindings = <&kp LC(LS(Z))>;
             key-positions = <34 35>;
         };
 
         redo_yarinaoshi {
-            bindings = <&kp C_AC_REDO>;
+            bindings = <&kp LC(Z)>;
             key-positions = <23 22>;
         };
     };
