@@ -61,6 +61,16 @@
             bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <19 20>;
         };
+
+        undo_motonimodosu {
+            bindings = <&kp K_UNDO>;
+            key-positions = <34 35>;
+        };
+
+        redo_yarinaoshi {
+            bindings = <&kp C_AC_REDO>;
+            key-positions = <23 22>;
+        };
     };
 
     macros {
