@@ -76,6 +76,11 @@
             bindings = <&to 0>;
             key-positions = <37 38 39 40 41>;
         };
+
+        screen_shot {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <0 34 9 42>;
+        };
     };
 
     macros {
