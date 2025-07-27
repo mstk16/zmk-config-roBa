@@ -48,7 +48,7 @@
         };
 
         enter_combo {
-            bindings = <&kp LANG4>; // DOUBLE_QUOTES を RETURN に変更
+            bindings = <&kp INT_MUHENKAN>; // DOUBLE_QUOTES を RETURN に変更
             key-positions = <12 19>; // キー位置はそのまま           
         };
 
