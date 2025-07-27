@@ -78,8 +78,8 @@
         };
 
         screen_shot {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <0 34 9 42>;
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <33 32 30 31 41>;
         };
     };
 
