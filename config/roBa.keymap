@@ -53,7 +53,7 @@
         };
 
         browser_back_combo {
-            bindings = <&kp K_BACK>;
+            bindings = <&kp LA(LEFT)>;
             key-positions = <18 19>;
         };
 
