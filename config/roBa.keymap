@@ -53,12 +53,12 @@
         };
 
         browser_back_combo {
-            bindings = <&kp LA(LEFT)>;
+            bindings = <&kp LA(LEFT_ARROW)>;
             key-positions = <18 19>;
         };
 
         susumu {
-            bindings = <&kp LA(RIGHT)>;
+            bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <19 20>;
         };
     };
