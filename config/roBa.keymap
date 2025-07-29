@@ -69,12 +69,12 @@
 
         layer0 {
             bindings = <&to 0>;
-            key-positions = <38 41 10 11 12 13 18 19 20 21>;
+            key-positions = <38 41 12 19>;
         };
 
         screen_shot {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <33 32 30 31 41>;
+            key-positions = <>;
         };
     };
 
@@ -168,7 +168,7 @@
             >;
         };
 
-        layer_7 {
+        setting {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
