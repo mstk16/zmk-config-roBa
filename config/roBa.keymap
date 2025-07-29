@@ -79,7 +79,7 @@
 
         game_mode {
             bindings = <&to 7>;
-            key-positions = <37 38>;
+            key-positions = <15 27>;
         };
     };
 
