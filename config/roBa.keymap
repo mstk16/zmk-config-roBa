@@ -69,12 +69,17 @@
 
         layer0 {
             bindings = <&to 0>;
-            key-positions = <38 41 12 19>;
+            key-positions = <40 39>;
         };
 
         screen_shot {
             bindings = <&kp LG(LS(S))>;
-            key-positions = <>;
+            key-positions = <0 9>;
+        };
+
+        game_mode {
+            bindings = <&to 7>;
+            key-positions = <37 38>;
         };
     };
 
@@ -168,12 +173,12 @@
             >;
         };
 
-        setting {
+        game1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5                         &trans  &trans  &trans  &trans  &trans
+&kp TAB         &kp Q         &kp W         &kp E          &kp R      &kp T       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D          &kp F      &kp G       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &kp Z         &kp X         &kp BACKSPACE  &kp SPACE  &trans      &trans  &trans                          &trans
             >;
         };
     };
