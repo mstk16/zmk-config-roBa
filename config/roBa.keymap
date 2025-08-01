@@ -19,7 +19,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <11 12>;
         };
 
         esc {
@@ -75,11 +75,6 @@
         screen_shot {
             bindings = <&kp LG(LS(S))>;
             key-positions = <0 9>;
-        };
-
-        game_mode {
-            bindings = <&to 7>;
-            key-positions = <15 27>;
         };
     };
 
