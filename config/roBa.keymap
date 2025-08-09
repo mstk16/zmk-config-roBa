@@ -34,7 +34,7 @@
 
         eq {
             bindings = <&kp EQUAL>;
-            key-positions = <26 27>;
+            key-positions = <26>;
         };
 
         scroll_combo {
@@ -44,7 +44,7 @@
 
         enter_combo {
             bindings = <&kp LANGUAGE_1>; // DOUBLE_QUOTES を RETURN に変更
-            key-positions = <12 19>; // キー位置はそのまま           
+            key-positions = <>; // キー位置はそのまま           
         };
 
         browser_back_combo {
@@ -76,6 +76,16 @@
             bindings = <&kp LG(LS(S))>;
             key-positions = <0 9>;
         };
+
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <4 14>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <14 26>;
+        };
     };
 
     macros {
@@ -104,8 +114,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W                  &kp E         &kp R          &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O            &kp P
-&kp A             &kp S                  &kp D         &kp F          &kp G      &kp TAB                     &kp MINUS      &kp H        &kp J  &kp K      &mt LCTRL MINUS  &kp L
-&mt LEFT_SHIFT Z  &kp X                  &kp C         &kp V          &kp B      &kp COLON                   &kp SEMICOLON  &kp N        &kp M  &mkp LCLK  &mkp RCLK        &mt RIGHT_SHIFT SLASH
+&kp A             &kp S                  &kp D         &kp F          &kp G      &none                       &none          &kp H        &kp J  &kp K      &mt LCTRL MINUS  &kp L
+&mt LEFT_SHIFT Z  &kp X                  &kp C         &kp V          &kp B      &none                       &none          &kp N        &kp M  &mkp LCLK  &mkp RCLK        &mt RIGHT_SHIFT SLASH
 &kp LEFT_CONTROL  &lt_to_layer_0 5 LGUI  &kp LEFT_ALT  &mt LCTRL DEL  &kp SPACE  &lt_to_layer_0 3 ENTER      &kp BACKSPACE  &lt 1 ENTER                                     &kp DEL
             >;
 
